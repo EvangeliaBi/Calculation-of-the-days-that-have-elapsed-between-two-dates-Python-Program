@@ -18,14 +18,6 @@ How it works:
 
 
 
-Limitations and improvements:
-
-• The current implementation uses a fixed assumption of 30 days per month and does not take into account leap years or the variable number of days in each month.
-
-• Next steps: replace the approach with the use of the datetime library for accurate calculations, and add input validation and unit tests.
-
-
-
 According to the above visual presentation of the program, the necessary assumptions that arise are as follows:
 
 • We assume that each month has 30 days and that there are no leap years, meaning each year has 365 days.
@@ -39,3 +31,11 @@ According to the above visual presentation of the program, the necessary assumpt
 Code explanation:
 We provide the start date A and the end date B while calculating the days from New Year's Day of year A to New Year's Day of year B, that is, the 'blue' distance, while simultaneously calculating the 'green' and 'orange' distances, respectively. Finally, we calculate the final result, which we display to the user as well!
 Despite the assumptions we made regarding the calculations, our program works relatively well. For example, the above execution will show that between 15/03/2018 and 20/08/2022, 1615 days have passed, while in reality the correct result is 1619 days, the discrepancy is small.
+
+
+
+Limitations and improvements:
+
+• The current implementation uses a fixed assumption of 30 days per month and does not take into account leap years or the variable number of days in each month.
+
+• Next steps: replace the approach with the use of the datetime library for accurate calculations, and add input validation and unit tests.
